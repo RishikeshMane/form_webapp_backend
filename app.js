@@ -9,14 +9,11 @@ const port = process.env.PORT;
 app.use(cors())
 
 //const  url = "mongodb://127.0.0.1:27017/testAPI";
-const url = "mongodb+srv://rexspec:opjeet1234@cluster0.xue9f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const url = "mongodb+srv://rexop:opjeet1234@cluster0.cv32z.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 mongoose.connect(url,{
     useNewUrlParser: true,
-    useUnifiedTopology: true,})
-const con = mongoose.connection
-con.on("open",()=>{
-    console.log("API db connected");
-})
+    useUnifiedTopology: true})
+
 
 app.use(morgan("dev"));
 app.use(exprees.urlencoded({ extended: true }));
