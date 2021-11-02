@@ -9,7 +9,7 @@ const port = process.env.PORT;
 app.use(cors())
 
 //const  url = "mongodb://127.0.0.1:27017/testAPI";
-const url = "mongodb+srv://rexop:opjeet1234@cluster0.cv32z.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const url = "mongodb+srv://rexop:opjeet1234@cluster1.cv32z.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 mongoose.connect(url,{
     useNewUrlParser: true,
     useUnifiedTopology: true})
