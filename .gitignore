@@ -1,4 +1,7 @@
 
 
 # dependencies
-/node_modules
+node_modules/
+index.js
+models.js
+mongodb atlas password.txt
